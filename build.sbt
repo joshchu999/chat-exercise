@@ -4,8 +4,9 @@ version := "1.0"
 
 scalaVersion := "2.11.8"
 
-mainClass in (Compile, run) := Some("Hi")
+mainClass in (Compile, run) := Some("idv.trashchu.exercise.chat.ChatApplication")
 
 libraryDependencies ++= Seq(
-    "com.typesafe.akka" %% "akka-actor" % "2.4.1"
+  "com.typesafe.akka" %% "akka-actor" % "2.4.7",
+  "com.typesafe.akka" %% "akka-remote" % "2.4.7"
 )
